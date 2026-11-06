@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="RANDOM DECISION"
+        android:textColor="#F4B942"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+	<Decision_Maker.WheelView
+        android:id="@+id/myWheelView"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_below="@id/title_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+	<Button
+        android:id="@+id/AddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myWheelView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="ADD SEGMENT"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D7263D" />
+
+    <Button
+        android:id="@+id/spin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddMore"
+        android:layout_centerHorizontal="true"
+        android:text="SPIN THE WHEEL"
+        android:textColor="#161A1D"
+        android:backgroundTint="#F4B942" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_button"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Choose a decision"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

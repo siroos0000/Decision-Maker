@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Decision Maker/Decision Maker.csproj">
+    <Deploy />
+  </Project>
+</Solution>
